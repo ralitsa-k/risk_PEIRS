@@ -112,7 +112,6 @@ write_csv(trigger_dat, paste0('Y:/DATA/derivatives/',subj_id,'/trigger_data.csv'
 
 }
 
-##
 # Bind the data, fix IDs -----------------------
 big_data1 = do.call(rbind, datalist) %>%
   filter(participant != is.na(participant))
